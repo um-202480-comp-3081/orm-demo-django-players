@@ -1,0 +1,19 @@
+<h1>Players</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Full Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for player in players %}
+            <tr>
+                <td>
+                    <a href="{% url 'players:player_detail' id=player.id %}">
+                        {{ player.full_name }}
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

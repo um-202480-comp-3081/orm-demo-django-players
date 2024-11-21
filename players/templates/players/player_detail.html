@@ -1,0 +1,14 @@
+<h1>{{ player.full_name }}</h1>
+<table>
+    <tr>
+        <th>Goals Scored</th>
+        <td>{{ player.goals_scored }}</td>
+    </tr>
+    <tr>
+        <th>Birth Date</th>
+        <td>{{ player.birth_date }}</td>
+    </tr>
+</table>
+<p>
+    <a href="{% url 'players:player_list' %}">Back to Player List</a>
+</p>
